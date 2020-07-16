@@ -19,6 +19,7 @@ public class pasien {
     private String Golongan_darah;
     private String Alamat;
     private String Jk;
+    private String hasil_pemeriksaan;
 
     public pasien() {
     }
@@ -27,10 +28,7 @@ public class pasien {
         this.No_KTP = No_KTP;
     }
 
-    
-    
-
-    public pasien(String No_antrian, String No_KTP, String Kode_Dokter, String Nama_pasien, String Ttl, String Golongan_darah, String Alamat, String Jk) {
+    public pasien(String No_antrian, String No_KTP, String Kode_Dokter, String Nama_pasien, String Ttl, String Golongan_darah, String Alamat, String Jk, String hasil_pemeriksaan) {
         this.No_antrian = No_antrian;
         this.No_KTP = No_KTP;
         this.Kode_Dokter = Kode_Dokter;
@@ -39,6 +37,7 @@ public class pasien {
         this.Golongan_darah = Golongan_darah;
         this.Alamat = Alamat;
         this.Jk = Jk;
+        this.hasil_pemeriksaan = hasil_pemeriksaan;
     }
 
     public String getNo_antrian() {
@@ -105,10 +104,21 @@ public class pasien {
         this.Jk = Jk;
     }
 
+    public String getHasil_pemeriksaan() {
+        return hasil_pemeriksaan;
+    }
+
+    public void setHasil_pemeriksaan(String hasil_pemeriksaan) {
+        this.hasil_pemeriksaan = hasil_pemeriksaan;
+    }
+
     @Override
     public String toString() {
-        return "pasien{" + "No_antrian=" + No_antrian + ", No_KTP=" + No_KTP + ", Kode_Dokter=" + Kode_Dokter + ", Nama_pasien=" + Nama_pasien + ", Ttl=" + Ttl + ", Golongan_darah=" + Golongan_darah + ", Alamat=" + Alamat + ", Jk=" + Jk + '}';
+        return "pasien{" + "No_antrian=" + No_antrian + ", No_KTP=" + No_KTP + ", Kode_Dokter=" + Kode_Dokter + ", Nama_pasien=" + Nama_pasien + ", Ttl=" + Ttl + ", Golongan_darah=" + Golongan_darah + ", Alamat=" + Alamat + ", Jk=" + Jk + ", hasil_pemeriksaan=" + hasil_pemeriksaan + '}';
     }
+
     
+    
+
     
 }

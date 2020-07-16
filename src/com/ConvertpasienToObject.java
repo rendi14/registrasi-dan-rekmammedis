@@ -16,7 +16,7 @@ public class ConvertpasienToObject {
   public Object[][] getAllPasien(){
         executepasien ml = new executepasien();
         List<pasien>listmhs = ml.ListPasien();
-        Object[][] datapasien = new Object[listmhs.size()][8];
+        Object[][] datapasien = new Object[listmhs.size()][9];
         
         int i = 0;
         for(pasien plg:listmhs){
@@ -28,6 +28,7 @@ public class ConvertpasienToObject {
             datapasien[i][5] = plg.getGolongan_darah();
             datapasien[i][6] = plg.getAlamat();
             datapasien[i][7] = plg.getJk();
+            datapasien[i][8] = plg.getHasil_pemeriksaan();
            i++;
             
         }

@@ -42,6 +42,7 @@ public class executepasien {
                 plg.setGolongan_darah(rs.getString("Golongan_Darah"));
                 plg.setAlamat(rs.getString("Alamat"));
                 plg.setJk(rs.getString("Jk"));
+                plg.setHasil_pemeriksaan(rs.getString("hasil_pemeriksaan"));
                 lspasien.add(plg);
             }
         } catch (SQLException ex) {
@@ -52,7 +53,7 @@ public class executepasien {
     }  
     
     public String InsertPasien(pasien pmb){
-      String query ="INSERT INTO pasien value(?,?,?,?,?,?,?,?)";
+      String query ="INSERT INTO pasien value(?,?,?,?,?,?,?,?,?)";
       ConnectionManager conMan = new ConnectionManager();
       com.mysql.jdbc.Connection conn = (com.mysql.jdbc.Connection) conMan.Logon();
       String Respon;
@@ -66,6 +67,7 @@ public class executepasien {
           pstm.setString(6, pmb.getGolongan_darah());
           pstm.setString(7, pmb.getAlamat());
           pstm.setString(8, pmb.getJk());
+          pstm.setString(9, pmb.getHasil_pemeriksaan());
           pstm.executeUpdate();
           Respon = "Insert Sukses";
       }catch(SQLException ex){
@@ -80,7 +82,7 @@ public class executepasien {
       String hasil = "";
       String query = "UPDATE pasien SET No_antrian='"+prd.getNo_antrian()+
               "', Jk='"+prd.getJk()+"', Alamat='"+prd.getAlamat()+"',"
-              + "Nama_Pasien='"+prd.getNama_pasien()+"',"+ "Kode_Dokter='"+prd.getKode_Dokter()+""
+              + "Nama_Pasien='"+prd.getNama_pasien()+"'," + "Ttl='"+prd.getTtl()+"',"+ "hasil_pemeriksaan='"+prd.getHasil_pemeriksaan()+"',"+ "Kode_Dokter='"+prd.getKode_Dokter()+""
               + "'WHERE No_KTP='"+prd.getNo_KTP()+"'";
       ConnectionManager conMan = new ConnectionManager();
       Connection conn = conMan.Logon();
@@ -95,7 +97,7 @@ public class executepasien {
       conMan.Logoff();
       return hasil;
     } 
-    public String DeletePasien(String mhs){
+    public String DeletePasien(String mhs ){
       String hasil = "";
       String query = "DELETE FROM pasien WHERE No_KTP='"+mhs+"'";
       ConnectionManager conMan = new ConnectionManager();
@@ -107,7 +109,7 @@ public class executepasien {
           
       } catch (SQLException ex) {
           hasil = "Gagal";
-          Logger.getLogger(executepasien.class.getName()).log(Level.SEVERE, null, ex);
+          Logger.getLogger(executebpjs.class.getName()).log(Level.SEVERE, null, ex);
       }
       conMan.Logoff();
       return hasil;

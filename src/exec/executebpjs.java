@@ -85,7 +85,7 @@ public class executebpjs {
     public String UpdateBpjs(bpjs prd){
       String hasil = "";
       String query = "UPDATE pasien_bpjs SET Status_per='"+prd.getStatus_per()+
-              "', Alamat='"+prd.getAlamat()+"', Kelas_P='"+prd.getKelas_p()+"',"
+              "', Alamat='"+prd.getAlamat()+"', Kelas_P='"+prd.getKelas_p()+"', Nama_pasien='"+prd.getNama_pasien()+"',Tgl_lahir='"+prd.getTgl_lahir()+"',Jk='"+prd.getJk()+"',No_antrian='"+prd.getNo_antrian()+"',Kode_dokter='"+prd.getKode_dokter()+"',"
               + "No_hp='"+prd.getNo_hp()+"',"+ "Pekerjaan='"+prd.getPekerjaan()+""
               + "'WHERE NIK='"+prd.getNik()+"'";
       ConnectionManager conMan = new ConnectionManager();

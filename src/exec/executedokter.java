@@ -47,7 +47,7 @@ public class executedokter {
      return lsdokter;
     }  
      public String hapusData(String kode_dokter){
-        String hasil = "";
+          String hasil = "";
       String query = "DELETE FROM dokter WHERE kode_dokter='"+kode_dokter+"'";
         ConnectionManager conMan = new ConnectionManager();
         Connection conn = conMan.Logon();
