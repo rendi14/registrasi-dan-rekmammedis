@@ -3,30 +3,20 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/bissmillah2/registrasidanrekammedis/src/view/admin.java</file>
-            <file>file:/D:/bissmillah2/registrasidanrekammedis/src/icon/application_exit1.png</file>
-            <file>file:/D:/bissmillah2/registrasidanrekammedis/src/icon/patient_256.png</file>
-            <file>file:/D:/bissmillah2/registrasidanrekammedis/src/icon/BPJS.png</file>
-            <file>file:/D:/bissmillah2/registrasidanrekammedis/src/icon/Next_arrow_1559%20(1).png</file>
-            <file>file:/D:/bissmillah2/registrasidanrekammedis/src/icon/refresh.png</file>
-            <file>file:/D:/bissmillah2/registrasidanrekammedis/src/icon/printer.png</file>
-            <file>file:/D:/bissmillah2/registrasidanrekammedis/src/view/login.java</file>
-            <file>file:/D:/bissmillah2/registrasidanrekammedis/src/icon/deletered.png</file>
-            <file>file:/D:/bissmillah2/registrasidanrekammedis/src/com/bpjs.java</file>
-            <file>file:/D:/bissmillah2/registrasidanrekammedis/src/exec/executedokter.java</file>
-            <file>file:/D:/bissmillah2/registrasidanrekammedis/src/view/MainBpjs.java</file>
-            <file>file:/D:/bissmillah2/registrasidanrekammedis/src/com/ConvertadokterToObject.java</file>
-            <file>file:/D:/bissmillah2/registrasidanrekammedis/src/exec/executebpjs.java</file>
-            <file>file:/D:/bissmillah2/registrasidanrekammedis/src/com/ConvertpasienToObject.java</file>
-            <file>file:/D:/bissmillah2/registrasidanrekammedis/src/view/dokter.java</file>
-            <file>file:/D:/bissmillah2/registrasidanrekammedis/src/com/dokter.java</file>
-            <file>file:/D:/bissmillah2/registrasidanrekammedis/src/icon/Search.png</file>
-            <file>file:/D:/bissmillah2/registrasidanrekammedis/src/view/halamanawal.java</file>
-            <file>file:/D:/bissmillah2/registrasidanrekammedis/src/icon/datadoc.png</file>
-            <file>file:/D:/bissmillah2/registrasidanrekammedis/src/view/main.java</file>
-            <file>file:/D:/bissmillah2/registrasidanrekammedis/src/icon/save3.png</file>
-            <file>file:/D:/bissmillah2/registrasidanrekammedis/src/view/MainPasien.java</file>
-            <file>file:/D:/bissmillah2/registrasidanrekammedis/src/icon/log-out%20(1).png</file>
+            <file>file:/D:/semester%204/RPL/registrasi-dan-rekmammedis-master/src/view/main.java</file>
+            <file>file:/D:/semester%204/RPL/registrasi-dan-rekmammedis-master/src/view/admin.java</file>
+            <file>file:/D:/semester%204/RPL/registrasi-dan-rekmammedis-master/src/view/halamanawal.java</file>
+            <file>file:/D:/semester%204/RPL/registrasi-dan-rekmammedis-master/src/com/ConvertRekammedis.java</file>
+            <file>file:/D:/semester%204/RPL/registrasi-dan-rekmammedis-master/src/exec/executedokter.java</file>
+            <file>file:/D:/semester%204/RPL/registrasi-dan-rekmammedis-master/src/view/MainRekammedis.java</file>
+            <file>file:/D:/semester%204/RPL/registrasi-dan-rekmammedis-master/src/view/login.java</file>
+            <file>file:/D:/semester%204/RPL/registrasi-dan-rekmammedis-master/src/exec/executerekammedis.java</file>
+            <file>file:/D:/semester%204/RPL/registrasi-dan-rekmammedis-master/src/com/Rekammedis.java</file>
+            <file>file:/D:/semester%204/RPL/registrasi-dan-rekmammedis-master/src/view/MainPasien.java</file>
+            <file>file:/D:/semester%204/RPL/registrasi-dan-rekmammedis-master/src/exec/executepasien.java</file>
+            <file>file:/D:/semester%204/RPL/registrasi-dan-rekmammedis-master/src/view/dokter.java</file>
+            <file>file:/D:/semester%204/RPL/registrasi-dan-rekmammedis-master/src/com/pasien.java</file>
+            <file>file:/D:/semester%204/RPL/registrasi-dan-rekmammedis-master/src/com/ConvertpasienToObject.java</file>
         </group>
     </open-files>
 </project-private>

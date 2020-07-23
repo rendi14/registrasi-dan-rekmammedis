@@ -88,9 +88,7 @@ public class executedokter {
          
 }
 
-    public String Updatedokter(view.dokter plg) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+    
       public String Updatedokter(dokter plg){
       String hasil = "";
       String query = "UPDATE dokter SET nama_dokter='"+plg.getNama_dokter()+

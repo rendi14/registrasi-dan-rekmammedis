@@ -13,13 +13,13 @@ package com;
 public class pasien {
     private String No_antrian;
     private String No_KTP;
-    private String Kode_Dokter;
+    private String NoBPJS;
     private String Nama_pasien;
     private String Ttl;
     private String Golongan_darah;
     private String Alamat;
     private String Jk;
-    private String hasil_pemeriksaan;
+    private String layanan;
 
     public pasien() {
     }
@@ -28,16 +28,16 @@ public class pasien {
         this.No_KTP = No_KTP;
     }
 
-    public pasien(String No_antrian, String No_KTP, String Kode_Dokter, String Nama_pasien, String Ttl, String Golongan_darah, String Alamat, String Jk, String hasil_pemeriksaan) {
+    public pasien(String No_antrian, String No_KTP, String NoBPJS, String Nama_pasien, String Ttl, String Golongan_darah, String Alamat, String Jk, String layanan) {
         this.No_antrian = No_antrian;
         this.No_KTP = No_KTP;
-        this.Kode_Dokter = Kode_Dokter;
+        this.NoBPJS = NoBPJS;
         this.Nama_pasien = Nama_pasien;
         this.Ttl = Ttl;
         this.Golongan_darah = Golongan_darah;
         this.Alamat = Alamat;
         this.Jk = Jk;
-        this.hasil_pemeriksaan = hasil_pemeriksaan;
+        this.layanan = layanan;
     }
 
     public String getNo_antrian() {
@@ -56,12 +56,12 @@ public class pasien {
         this.No_KTP = No_KTP;
     }
 
-    public String getKode_Dokter() {
-        return Kode_Dokter;
+    public String getNoBPJS() {
+        return NoBPJS;
     }
 
-    public void setKode_Dokter(String Kode_Dokter) {
-        this.Kode_Dokter = Kode_Dokter;
+    public void setNoBPJS(String NoBPJS) {
+        this.NoBPJS = NoBPJS;
     }
 
     public String getNama_pasien() {
@@ -104,21 +104,18 @@ public class pasien {
         this.Jk = Jk;
     }
 
-    public String getHasil_pemeriksaan() {
-        return hasil_pemeriksaan;
+    public String getLayanan() {
+        return layanan;
     }
 
-    public void setHasil_pemeriksaan(String hasil_pemeriksaan) {
-        this.hasil_pemeriksaan = hasil_pemeriksaan;
+    public void setLayanan(String layanan) {
+        this.layanan = layanan;
     }
 
     @Override
     public String toString() {
-        return "pasien{" + "No_antrian=" + No_antrian + ", No_KTP=" + No_KTP + ", Kode_Dokter=" + Kode_Dokter + ", Nama_pasien=" + Nama_pasien + ", Ttl=" + Ttl + ", Golongan_darah=" + Golongan_darah + ", Alamat=" + Alamat + ", Jk=" + Jk + ", hasil_pemeriksaan=" + hasil_pemeriksaan + '}';
+        return "pasien{" + "No_antrian=" + No_antrian + ", No_KTP=" + No_KTP + ", NoBPJS=" + NoBPJS + ", Nama_pasien=" + Nama_pasien + ", Ttl=" + Ttl + ", Golongan_darah=" + Golongan_darah + ", Alamat=" + Alamat + ", Jk=" + Jk + ", layanan=" + layanan + '}';
     }
 
-    
-    
-
-    
+  
 }

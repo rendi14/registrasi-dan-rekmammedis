@@ -158,14 +158,26 @@ public class login extends javax.swing.JFrame {
         try {
             Statement statement = (Statement)koneksi1.GetConnection().createStatement();
             ResultSet res = statement.executeQuery("select * from admin where "+ "username ='"+user.getText()+"' and password ='"+String.valueOf(pass.getText())+"'");
-            if (res.next()) {
+            while (res.next()) {
                 halamanawal home = new halamanawal();
                 home.setVisible(true);
                 this.dispose();
             }
-            else {
-                JOptionPane.showMessageDialog(null, "Username dan Password Salah");
+            res.close();
+        }
+        catch (Exception t) {
+            JOptionPane.showMessageDialog(null, "Gagal Masuk ");
+        }
+        
+         try {
+            Statement statement = (Statement)koneksi1.GetConnection().createStatement();
+            ResultSet res = statement.executeQuery("select * from dokter where "+ "kode_dokter ='"+user.getText()+"' and nama_dokter ='"+String.valueOf(pass.getText())+"'");
+           while (res.next()) {
+               dokter home = new dokter();
+                home.setVisible(true);
+                this.dispose();
             }
+            res.close();
         }
         catch (Exception t) {
             JOptionPane.showMessageDialog(null, "Gagal Masuk ");

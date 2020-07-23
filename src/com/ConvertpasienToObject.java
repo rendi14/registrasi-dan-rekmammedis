@@ -22,13 +22,13 @@ public class ConvertpasienToObject {
         for(pasien plg:listmhs){
             datapasien[i][0] = plg.getNo_antrian();
             datapasien[i][1] = plg.getNo_KTP();
-            datapasien[i][2] = plg.getKode_Dokter();
+            datapasien[i][2] = plg.getNoBPJS();
             datapasien[i][3] = plg.getNama_pasien();
             datapasien[i][4] = plg.getTtl();
             datapasien[i][5] = plg.getGolongan_darah();
             datapasien[i][6] = plg.getAlamat();
             datapasien[i][7] = plg.getJk();
-            datapasien[i][8] = plg.getHasil_pemeriksaan();
+            datapasien[i][8] = plg.getLayanan();
            i++;
             
         }
